@@ -1,0 +1,104 @@
+body {
+  background-image: url(./img/beach.jpg);
+  background-size: cover;
+
+  margin: 0 auto;
+  display: block;
+}
+#h0 {
+  color: rgb(18, 18, 17);
+  padding-left: 1%;
+}
+#h1 {
+  text-align: center;
+  color: white;
+}
+#h2 {
+  text-align: center;
+  color: whitesmoke;
+}
+#slide1 {
+  animation: slide1 3s ease 0s;
+}
+
+.images1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes slide1 {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+#button-form {
+  padding-top: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button {
+  display: flex;
+  background-color: whitesmoke;
+  border: 1px solid;
+  border-radius: 50px 50px / 50px 50px;
+  transition: transform 0, 3s;
+  padding: 20px;
+  width: 400px;
+  height: 60px;
+  margin: 0 auto;
+  text-align: center;
+  animation: button 2s step-end 0s;
+}
+.button a {
+  text-decoration: none;
+}
+.button:hover {
+  background-color: rgb(158, 249, 249);
+  transform: scale(1.2);
+}
+:visited {
+  color: black;
+}
+
+@keyframes button {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.copy {
+  margin-right: 20px;
+  margin-bottom: 30px;
+  text-align: right;
+}
+
+@media screen and (max-width: 640px) {
+  body {
+    margin: 10px 20px;
+  }
+  nav .onglets {
+    margin-top: -10px;
+  }
+  .articles .article .left img {
+    height: 100%;
+    width: 100%;
+  }
+  .articles .article .right {
+    margin: 0;
+    max-width: 100%;
+  }
+  footer .social-media {
+    margin-top: -20px;
+  }
+}
